@@ -1,5 +1,6 @@
 ﻿#language: ru
-
+@ExportScenarios
+@IgnoreOnCIMainBuild
 Функционал: Создание документа поступление товаров
 
 Как <Роль> я хочу
