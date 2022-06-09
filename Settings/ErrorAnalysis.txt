@@ -1,0 +1,25 @@
+SerialLotNumber: _0920SerialLotNumber.feature
+ошибка в шаге And "ResultTable" spreadsheet document contains lines: по причине отсутствия в отчете Registrations report в таблице ResultTable строки
+ | ''| '*' | '-2' | '-800' | '-677,97' | '' | 'Main Company' | 'Shop 01' | 'Store 01' | '$$RetailSalesReceipt092002$$' | '38/Yellow' | '99098809009998' | '*'|
+
+ InfoMessages: _1545InfoMessages.feature
+ ошибка в шаге Then the number of "BasisesTree" table lines is "?????" 0 форме документа SalesOrder после нажатия на кнопку FormDocumentPurchaseOrderGenerate, т.к. таблица BasisesTree содержит 2 строки, а должна быть пустая
+
+ RetailDocuments: _2024FillingRetailDocuments.feature
+ не выполнен шаг And I go to line in "List" table, т.к. после нажатия на кнопку FormPostAndClose на форме не найдена таблица List
+
+ LinkedTransaction: _2060LinkUnlinkForm.feature
+ не выполнен шаг And I go to line in "BasisesTree" table, т.к. в форме документа PurchaseInvoice в таблице BasisesTree не найдена строка
+ | 'TRY'      | '100,00' | '10,000'   | 'Dress (S/Yellow)' | 'pcs'  |
+
+Sales: _0240CreateSalesInvoice.feature
+шаг And I click "Sales invoice" button не выполнен, т.к. на форме не найдена кнопка с заголовком Sales invoice
+
+Sales: _0240CreateSalesInvoice.feature
+шаг And I go to line in "BasisesTree" table не выполнен, т.к. в строке 
+| 'TRY'      | '350,00' | '7,000'    | 'Shirt (36/Red)'   | 'pcs'  | 'No'  |
+не найдено количество 7
+
+TestDataBase: _9700FillingInTestDataBase.feature
+не выполнен шаг Given I open hyperlink "e1cib/list/Document.SalesOrder" т.к. объект File_"C__BuildAgentOne_work_161527a3295c878a_VAResult_AllSteps_TestDataBase"_ не доступен
+
